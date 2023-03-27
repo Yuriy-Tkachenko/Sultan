@@ -3,11 +3,12 @@ import {
   StyledHeader, MenuWrapper, UserNavigation, 
   NavButton, NavDescription, SiteNavigation, InfoWrapper, 
   ListInfo, ItemInfo, Info, Description, CallBackButton, 
-  ButtonIcon, ButtonName, MenuTitle, MenuItem, DownloadButton, ButtonText
+  ButtonIcon, ButtonName, MenuTitle, MenuItem
 } from "./styles";
 import { Ul } from "../../styled/styled";
 import Button from "../../ui/button/button";
 import BasketButton from "../../ui/basket-button/basket-button";
+import DownLoadButton from "../../ui/download-button/download-button";
 
 import { ReactComponent as LogoImage } from "../../../assets/header-logo.svg";
 import tagPicture from "../../../assets/tag.svg";
@@ -73,9 +74,7 @@ function Header() {
             <MenuItem>Контакты</MenuItem>
           </Ul>
         </div>
-        <DownloadButton>
-          <ButtonText>Прайс-лист</ButtonText>  
-        </DownloadButton>
+        <DownLoadButton name="Прайс-лист" width={290} height={70}/>
       </SiteNavigation>
     </StyledHeader>
   )

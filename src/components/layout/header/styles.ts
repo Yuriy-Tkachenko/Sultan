@@ -3,7 +3,6 @@ import { Button } from "../../styled/styled";
 import { Li } from "../../styled/styled";
 import { Ul } from "../../styled/styled";
 import phone from "../../../assets/white-phone.svg";
-import download from "../../../assets/download.svg";
 
 export const StyledHeader = styled.header`
   padding: 10px 0;
@@ -158,32 +157,5 @@ export const MenuItem = styled(Li)`
 
   &:not(:last-child) {
     margin-bottom: 20px;
-  }
-`;
-
-export const DownloadButton = styled(Button)`
-  min-width: 290px;
-  background-color: ${(props) => props.theme.yellowBackground};
-  border-radius: 79px;
-  padding: 26px 0;
-  margin-bottom: 32px;
-`;
-
-export const ButtonText = styled.span`
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: ${(props) => props.theme.whiteColor};
-  padding-right: 29px;
-  position: relative;
-
-  &:after {
-    content: "";
-    position: absolute;
-    width: 11.33px;
-    height: 12.75px;
-    background-image: url(${download});
-    right: 0;
-    top: 1px;
   }
 `;
