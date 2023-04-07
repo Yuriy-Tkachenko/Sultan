@@ -1,10 +1,10 @@
 import React from "react";
 import { StyledButton } from "./styles";
 
-function Button() {
+function ButtonClose() {
   return (
     <StyledButton />
   )
 }
 
-export default Button;
+export default ButtonClose;

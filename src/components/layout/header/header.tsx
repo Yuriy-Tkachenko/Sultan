@@ -1,42 +1,40 @@
 import React from "react";
 import { 
   StyledHeader, MenuWrapper, UserNavigation, 
-  NavButton, NavDescription, SiteNavigation, InfoWrapper, 
-  ListInfo, ItemInfo, Info, Description, CallBackButton, 
-  ButtonIcon, ButtonName, MenuTitle, MenuItem
+  SiteNavigation, InfoWrapper, 
+  ListInfo, ItemInfo, Info, Description, Wrapper
 } from "./styles";
-import { Ul } from "../../styled/styled";
-import Button from "../../ui/button/button";
+import HeaderLogo from "../../ui/header-logo/header-logo";
+import ButtonClose from "../../ui/button-close/button-close";
 import BasketButton from "../../ui/basket-button/basket-button";
 import DownLoadButton from "../../ui/download-button/download-button";
+import CatalogButton from "../../ui/catalog-button/catalog-button";
+import SearchInput from "../../ui/search-input/search-input";
+import CallbackButton from "../../ui/callback-button/callback-button";
 
-import { ReactComponent as LogoImage } from "../../../assets/header-logo.svg";
 import tagPicture from "../../../assets/tag.svg";
 import mailPicture from "../../../assets/mail.svg";
 import phonePicture from "../../../assets/phone.svg";
-import search from "../../../assets/search-logo.svg";
-import box from "../../../assets/cube.svg"
+
 
 function Header() {
   return (
     <StyledHeader>
-      <MenuWrapper>
-        <Button />
-        <LogoImage />
-        <BasketButton />
-      </MenuWrapper>
       <UserNavigation>
-        <NavButton>
-          <img src={box} width={15} height={15} style={{ marginRight: '6px' }} alt={'Логотип кубов'} />
-          <NavDescription>Каталог</NavDescription>
-        </NavButton>
-        <NavButton>
-          <img src={search} width={15} height={15} style={{ marginRight: '6px' }} alt={'Логотип лупы'}/>
-          <NavDescription>Поиск</NavDescription>
-        </NavButton>
+        <MenuWrapper>
+          <ButtonClose />
+          <HeaderLogo />
+        </MenuWrapper>
+        <Wrapper>
+          <CatalogButton name='Каталог'/>
+          <SearchInput />
+          <CallbackButton />
+          <DownLoadButton name="Прайс-лист" width={200} height={59}/>
+          <BasketButton />
+        </Wrapper>
       </UserNavigation>
       <SiteNavigation>
-        <InfoWrapper style={{ marginBottom: '50px' }}>
+        <InfoWrapper>
           <ListInfo>
             <ItemInfo>
               <img src={tagPicture} width={13.3} height={16.6} style={{ marginRight: '18px' }} alt='Логотип метки'/>
@@ -60,21 +58,7 @@ function Header() {
               </div>
             </ItemInfo>
           </ListInfo>
-          <CallBackButton>
-            <ButtonIcon />
-            <ButtonName>Заказать звонок</ButtonName>
-          </CallBackButton>
         </InfoWrapper>
-        <div style={{ marginBottom: '22px' }}>
-          <MenuTitle>Меню сайта:</MenuTitle>
-          <Ul>
-            <MenuItem>О компании</MenuItem>
-            <MenuItem>Доставка и оплата</MenuItem>
-            <MenuItem>Возврат</MenuItem>
-            <MenuItem>Контакты</MenuItem>
-          </Ul>
-        </div>
-        <DownLoadButton name="Прайс-лист" width={290} height={70}/>
       </SiteNavigation>
     </StyledHeader>
   )

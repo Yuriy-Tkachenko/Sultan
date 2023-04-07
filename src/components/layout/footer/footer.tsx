@@ -19,14 +19,12 @@ import { ReactComponent as MCImage } from "../../../assets/mastercard-logo.svg";
 import { ReactComponent as WhatsupImage } from "../../../assets/whatsup-logo.svg";
 import { ReactComponent as TelegramImage } from "../../../assets/telegram-logo.svg";
 import { Ul, Li } from "../../styled/styled";
-import DownLoadButton from "../../ui/download-button/download-button";
 
 function Footer() {
   return (
     <StyledFooter>
       <Wrapper style={{ marginBottom: '15px' }}>
         <LogoImage width={97} height={41}/>
-        <DownLoadButton name="Прайс-лист" width={149} height={40}/>
       </Wrapper>
       <Description>
         Компания «Султан» — снабжаем розничные магазины товарами "под ключ" в Кокчетаве и Акмолинской области

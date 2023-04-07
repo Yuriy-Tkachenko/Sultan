@@ -1,20 +1,37 @@
 import styled from "styled-components";
-import { Button } from "../../styled/styled";
 import { Li } from "../../styled/styled";
 import { Ul } from "../../styled/styled";
-import phone from "../../../assets/white-phone.svg";
 
 export const StyledHeader = styled.header`
-  padding: 10px 0;
+  //padding: 10px 0;
   display: flex;
   flex-direction: column;
+
+  @media(min-width: ${((props) => props.theme.tabletWidth)}) {
+    width: ${((props) => props.theme.tabletWidth)};
+    margin: 0 auto;
+  }
+
+  @media(min-width: ${((props) => props.theme.desktopWidth)}) {
+    width: ${((props) => props.theme.desktopWidth)};
+    margin: 0 auto;
+  }
+`;
+
+export const UserNavigation = styled.div`
+  @media(min-width: ${((props) => props.theme.tabletWidth)}) {
+    width: 100%;
+    display: flex;
+    order: 2;
+    padding: 20px 0;
+  }
 `;
 
 export const MenuWrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 15px 10px 15px;
+  justify-content: center;
+  padding: 10px 15px;
   position: relative;
 
   &:after {
@@ -26,9 +43,17 @@ export const MenuWrapper = styled.div`
     bottom: 0;
     left: 0;
   }
+
+  @media(min-width: ${((props) => props.theme.tabletWidth)}) {
+    padding: 0;
+
+    &:after {
+      content: none;
+    }
+  }
 `;
 
-export const UserNavigation = styled.nav`
+export const Wrapper = styled.nav`
   display: flex;
   justify-content: space-around;
   position: relative;
@@ -52,26 +77,46 @@ export const UserNavigation = styled.nav`
     opacity: 0.1;
     top: 5px;
   }
-`;
 
-export const NavButton = styled(Button)`
-  display: flex;
-  position: relative;
-`;
+  @media(min-width: ${((props) => props.theme.tabletWidth)}) {
+    padding: 0;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-export const NavDescription = styled.span`
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
+    &:before {
+      content: none;
+    }
+
+    &:after {
+      content: none;
+    }
+  }
 `;
 
 export const SiteNavigation = styled.div`
-  padding: 0 13px;
+  padding: 0 13px 100px 13px;
+
+  @media(min-width: ${((props) => props.theme.tabletWidth)}) {
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 `;
 
 export const ListInfo = styled(Ul)`
   margin: 20px 0 25px 0;
+
+  @media(min-width: ${((props) => props.theme.tabletWidth)}) {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 0;
+  }
 `;
 
 export const ItemInfo = styled(Li)`
@@ -81,10 +126,23 @@ export const ItemInfo = styled(Li)`
   &:not(:last-child) {
     margin-bottom: 15px;
   }
+
+  @media(min-width: ${((props) => props.theme.tabletWidth)}) {
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      display: none;
+    }
+  }
 `;
 
 export const InfoWrapper = styled.div`
   position: relative;
+  margin-bottom: 50px;
+  height: 100%;
 
   &:after {
     content: "";
@@ -92,7 +150,16 @@ export const InfoWrapper = styled.div`
     width: 100%;
     border-bottom: 1px dashed #3F4E65;
     opacity: 0.2;
-    bottom: -25px;
+    bottom: -53px;
+  }
+
+  @media(min-width: ${((props) => props.theme.tabletWidth)}) {
+    margin: 0;
+    display: flex;
+
+    &:after {
+      content: none;
+    }
   }
 `;
 
@@ -106,56 +173,4 @@ export const Description = styled.span`
   font-weight: 300;
   font-size: 12px;
   color: ${(props) => props.theme.greyColor};
-`;
-
-export const CallBackButton = styled(Button)`
-  display: flex;
-  align-items: center;
-  padding: 0;
-`;
-
-export const ButtonIcon = styled.div`
-  width: 30px;
-  height: 30px;
-  background-color: ${(props) => props.theme.yellowBackground};
-  border-radius: 50%;
-  border: none;
-  position: relative;
-  margin-right: 7px;
-
-  &:before {
-    content: "";
-    position: absolute;
-    width: 8.13px;
-    height: 8.13px;
-    background-image: url(${phone});
-    top: 10px;
-    left: 10px;
-  }
-`;
-
-export const ButtonName = styled.span`
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 150%;
-  color: ${(props) => props.theme.greyColor};
-  text-decoration-line: underline;
-`;
-
-export const MenuTitle = styled.h2`
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 150%;
-  margin: 0 0 25px 0;
-`;
-
-export const MenuItem = styled(Li)`
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  color: ${(props) => props.theme.greyColor};
-
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
 `;
