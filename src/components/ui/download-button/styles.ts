@@ -5,6 +5,12 @@ import download from "../../../assets/download.svg";
 export const ButtonWrapper = styled(Button)`
   background-color: ${(props) => props.theme.yellowBackground};
   border-radius: 79px;
+  position: absolute;
+  top: 295px;
+
+  @media(min-width: ${(props) => props.theme.tabletWidth}) {
+    position: static;
+  }
 `;
 
 export const ButtonText = styled.span`

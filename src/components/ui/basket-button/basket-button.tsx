@@ -1,9 +1,16 @@
 import React from "react";
-import { StyledButton } from "./styles";
+import { StyledButton, Name, Price, TextWrapper, Logo, Counter } from "./styles";
 
 function BasketButton() {
   return (
-    <StyledButton />
+    <StyledButton>
+      <Logo />
+      <Counter>0</Counter>
+      <TextWrapper>
+        <Name>Корзина</Name>
+        <Price>0 ₸</Price>
+      </TextWrapper>
+    </StyledButton>
   )
 }
 
