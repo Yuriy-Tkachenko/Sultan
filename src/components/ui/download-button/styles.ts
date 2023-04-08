@@ -10,6 +10,7 @@ export const ButtonWrapper = styled(Button)`
 
   @media(min-width: ${(props) => props.theme.tabletWidth}) {
     position: static;
+    display: block;
   }
 `;
 

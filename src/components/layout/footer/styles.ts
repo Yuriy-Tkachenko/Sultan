@@ -1,18 +1,36 @@
 import styled from "styled-components";
 import { Input, Label, Button, Li } from "../../styled/styled";
-import submitButton from "../../../assets/submit-button.svg";
 
 export const StyledFooter = styled.footer`
   height: 100%;
   padding: 15px;
   background-color: ${(props) => props.theme.greyColor};
   color: ${(props) => props.theme.whiteColor};
+  position: relative;
+
+  @media(min-width: ${(props) => props.theme.tabletWidth}) {
+    padding: 71px 15px 116px 15px;
+  }
+`;
+
+export const Container = styled.div`
+  @media(min-width: ${(props) => props.theme.tabletWidth}) {
+    width: ${(props) => props.theme.tabletWidth};
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media(min-width: ${(props) => props.theme.desktopWidth}) {
+    width: ${(props) => props.theme.desktopWidth};
+    margin: 0 auto;
+  }
 `;
 
 export const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  //display: flex;
+  //justify-content: space-between;
+  //align-items: center;
 `;
 
 export const Description = styled.p`
@@ -20,47 +38,12 @@ export const Description = styled.p`
   font-size: 12px;
   line-height: 150%;
   margin: 0 0 14px 0;
-`;
 
-export const StyledForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  max-width: 282px;
-  margin-bottom: 30px;
-  position: relative;
-`;
-
-export const FormCaption = styled(Label)`
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-  margin-bottom: 14px;
-`;
-
-export const FormField = styled(Input)`
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-  border-radius: 36px;
-  padding: 20px;
-
-  &:placeholder-shown {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    color: ${(props) => props.theme.lightGreyColor};
+  @media(min-width: ${(props) => props.theme.tabletWidth}) {
+    font-size: 16px;
+    max-width: 320px;
+    margin-bottom: 45px;
   }
-`;
-
-export const SubmitButton = styled(Button)`
-  width: 39px;
-  height: 39px;
-  border-radius: 50%;
-  background-image: url(${submitButton});
-  position: absolute;
-  top: 42px;
-  right: 15px;
 `;
 
 export const MenuTitle = styled.h2`
@@ -104,4 +87,16 @@ export const CallButton = styled(Button)`
   text-decoration: underline;
   padding: 0;
   display: block;
+`;
+
+export const Caption = styled.h2`
+  display: none;
+
+  @media(min-width: ${(props) => props.theme.tabletWidth}) {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    margin: 0 0 25px 0;
+  }
 `;
