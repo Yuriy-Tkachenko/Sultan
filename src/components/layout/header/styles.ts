@@ -3,7 +3,7 @@ import { Li } from "../../styled/styled";
 import { Ul } from "../../styled/styled";
 
 export const StyledHeader = styled.header`
-  //padding: 10px 0;
+  padding: 0 15px;
   display: flex;
   flex-direction: column;
 

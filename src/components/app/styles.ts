@@ -19,4 +19,8 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 300;
     color: #333333;
   }
+
+  * {
+    box-sizing: border-box;
+  }
 `
