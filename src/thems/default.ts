@@ -3,6 +3,7 @@ export const defaultTheme = {
   desktopWidth: "1370px",
   blackColor: "#111111",
   whiteColor: "#FFFFFF",
+  greenColor: "#1FD85D",
   greyColor: "#3F4E65",
   lightGreyColor: "#5C6370",
   extraLightGreyColor: "#EDEDED",
