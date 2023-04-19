@@ -2,6 +2,7 @@ import React from "react";
 import { Main, MainOffer, Wrapper, Title, TextWrapper, Text, Offers } from "./styles";
 import Offer from "../../ui/offer/offer";
 import PromotionalProducts from "../../blocks/promotional-products/promotional-products";
+import Category from "../../blocks/category/category";
 
 function MainPage() {
   return(
@@ -19,6 +20,7 @@ function MainPage() {
         </Wrapper>
       </MainOffer>
       <PromotionalProducts />
+      <Category />
     </Main>
   )
 }

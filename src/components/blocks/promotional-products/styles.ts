@@ -12,6 +12,11 @@ export const StyledTitle = styled(Title)`
 export const Wrapper = styled.section`
   width: 100%;
   padding: 0 15px;
+  margin-bottom: 82px;
+
+  @media(min-width: ${((props) => props.theme.tabletWidth)}) {
+    margin-bottom: 100px;
+  }
 `;
 
 export const Container = styled.div`
