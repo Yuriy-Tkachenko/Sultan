@@ -1,24 +1,16 @@
 import styled from "styled-components";
+import { Li } from "../../styled/styled";
 
-export const CardWrapper = styled.div`
+export const CardWrapper = styled(Li)`
   width: 140px;
   height: 100%;
   text-align: center;
 
-  &:last-child {
-    width: 290px;
-    grid-column: -3/-1;
-    grid-row: 3/4;
-  }
+  
 
   @media(min-width: ${((props) => props.theme.tabletWidth)}) {
     width: 250px;
     height: 291px;
-
-    &:last-child {
-      grid-column: 4/5;
-      grid-row: 1/1;
-    }
   }
 `;
 

@@ -43,18 +43,13 @@ export const Description = styled.p`
 `;
 
 export const CategoryList = styled(Ul)`
-  display: grid;
-  grid-template-columns: min-content min-content;
-  grid-template-rows: min-content min-content min-content;
-  gap: 10px;
-  justify-content: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 
   @media(min-width: ${((props) => props.theme.tabletWidth)}) {
-    grid-template-columns: repeat(5, min-content);
-    grid-template-rows: min-content;
-    gap: 30px;
-    justify-content: start;
     margin-bottom: 100px;
   }
 `;
