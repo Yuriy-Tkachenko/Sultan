@@ -1,6 +1,8 @@
 export interface IImage {
   src?: string;
   srcset?: string;
+  mobileSrc?: string;
+  mobileSrcset?: string;
   width?: number;
   height?: number;
 };

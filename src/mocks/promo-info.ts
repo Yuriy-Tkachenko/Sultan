@@ -1,5 +1,7 @@
-import housewife1x from "../assets/housewife@1x.png";
-import housewife2x from "../assets/housewife@2x.png";
+import mobileHousewife1x from "../assets/mobile-housewife@1x.png";
+import mobileHousewife2x from "../assets/mobile-housewife@2x.png";
+import houseWife1x from "../assets/housewife@1x.png";
+import houseWife2x from "../assets/housewife@2x.png";
 
 const promoInfo = [
   {
@@ -8,8 +10,10 @@ const promoInfo = [
     name: 'Скидка 30% на бытовую химию',
     description: 'При покупке товаров на сумму от 10000 ₸',
     image: {
-      scr: housewife1x,
-      srcset: housewife2x,
+      mobileSrc: mobileHousewife1x,
+      mobileSrcset: mobileHousewife2x,
+      src: houseWife1x,
+      srcset: houseWife2x
     }
   },
   {
@@ -18,8 +22,10 @@ const promoInfo = [
     name: 'Кэшбэк 5%',
     description: 'При оплате картой Halyk Bank',
     image: {
-      src: housewife1x,
-      srcset: housewife2x,
+      mobileSrc: mobileHousewife1x,
+      mobileSrcset: mobileHousewife2x,
+      src: houseWife1x,
+      srcSet: houseWife2x
     }
   },
   {
@@ -28,8 +34,10 @@ const promoInfo = [
     name: 'Получи приз',
     description: 'Оформи карту нашего магазина и получи приз на первую покупку!',
     image: {
-      src: housewife1x,
-      srcset: housewife2x,
+      mobileSrc: mobileHousewife1x,
+      mobileSrcset: mobileHousewife2x,
+      src: houseWife1x,
+      srcSet: houseWife2x
     }
   }
 ]

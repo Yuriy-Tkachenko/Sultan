@@ -14,6 +14,7 @@ interface PromoProps {
 const PromoList: FC<PromoProps> = ({infos}) => {
   return(infos?.length ? (
     <StyledSwiper
+    slidesPerView={1}
     modules={[Navigation, Pagination]}
     navigation
     >

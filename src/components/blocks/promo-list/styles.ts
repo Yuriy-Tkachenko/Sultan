@@ -7,9 +7,8 @@ export const StyledSwiper = styled(Swiper)`
   margin-bottom: 82px;
 
   @media(min-width: ${((props) => props.theme.tabletWidth)}) {
-    width: 100%;
-    height: 500px;
-    padding: 0 50px;
+    width: ${((props) => props.theme.tabletWidth)};
+    height: 500px;s
     margin-bottom: 100px;
   }
 

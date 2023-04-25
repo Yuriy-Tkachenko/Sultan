@@ -12,7 +12,7 @@ const Promo: FC<PromoProps> = ({info}) => {
       <ConditionText>{info.condition}</ConditionText>
       <Name>{info.name}</Name>
       <Description>{info.description}</Description>
-      <StyledImage src={info.image.src} srcSet={info.image.srcset}/>
+      <StyledImage src={info.image.src} srcSet={info.image.srcset} />
     </Wrapper>
   )
 }
