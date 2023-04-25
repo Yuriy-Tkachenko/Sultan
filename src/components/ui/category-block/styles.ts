@@ -40,7 +40,7 @@ export const CardBlock = styled.div`
 export const StyledImage = styled.img`
   position: absolute;
   width: 90%;
-  height: 90%;
+  height: 80%;
   left: 0;
   bottom: 0;
   border-radius: 20px;

@@ -9,7 +9,7 @@ interface ProductsProps {
 }
 
 const ProductList: FC<ProductsProps> = ({products}) => {
-  return(
+  return(products?.length ? (
     <StyledList style={{display: 'flex'}}>
       {products.map(product => 
         <Li>
@@ -17,6 +17,7 @@ const ProductList: FC<ProductsProps> = ({products}) => {
         </Li>
       )}
     </StyledList>
+    ) : null
   )
 }
 

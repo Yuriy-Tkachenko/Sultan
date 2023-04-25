@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Input, Label, Button, Li } from "../../styled/styled";
+import { Button, Li } from "../../styled/styled";
 
 export const StyledFooter = styled.footer`
   height: 100%;

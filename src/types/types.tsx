@@ -17,3 +17,11 @@ export interface IProduct {
   price: string;
   image: IImage;
 };
+
+export interface IPromo {
+  id: number;
+  condition: string;
+  name: string;
+  description: string;
+  image: IImage;
+}

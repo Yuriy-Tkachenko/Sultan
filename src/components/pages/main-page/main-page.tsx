@@ -3,6 +3,8 @@ import { Main, MainOffer, Wrapper, Title, TextWrapper, Text, Offers } from "./st
 import Offer from "../../ui/offer/offer";
 import PromotionalProducts from "../../blocks/promotional-products/promotional-products";
 import Category from "../../blocks/category/category";
+import PromoList from "../../blocks/promo-list/promo-list";
+import promoInfo from "../../../mocks/promo-info";
 
 function MainPage() {
   return(
@@ -21,6 +23,7 @@ function MainPage() {
       </MainOffer>
       <PromotionalProducts />
       <Category />
+      <PromoList infos={promoInfo}/>
     </Main>
   )
 }
