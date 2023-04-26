@@ -27,3 +27,8 @@ export interface IPromo {
   description: string;
   image: IImage;
 }
+
+export interface IBrands {
+  id: number;
+  image: IImage;
+}

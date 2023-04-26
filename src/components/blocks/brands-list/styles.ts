@@ -1,10 +1,15 @@
 import styled from "styled-components";
-import Title from "../../ui/title/title";
-import { Ul } from "../../styled/styled";
 import { P } from "../../styled/styled";
+import { Swiper } from "swiper/react";
 
 export const Wrapper = styled.section`
+  width: 100%;
   padding: 0 15px;
+  margin-bottom: 82px;
+
+  @media(min-width: ${((props) => props.theme.tabletWidth)}) {
+    margin-bottom: 100px;
+  }
 `;
 
 export const Container = styled.div`
@@ -19,32 +24,30 @@ export const Container = styled.div`
   }
 `;
 
-export const StyledTitle = styled(Title)`
-  margin-bottom: 10px;
+export const StyledText = styled(P)`
+  margin: 0 0 25px 0;
 
   @media(min-width: ${((props) => props.theme.tabletWidth)}) {
-    margin-bottom: 15px;
+    margin: 0 0 50px 0;
   }
 `;
 
-export const Description = styled(P)`
-  margin-bottom: 25px;
-  width: 182px;
-
-  @media(min-width: ${((props) => props.theme.tabletWidth)}) {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-`;
-
-export const CategoryList = styled(Ul)`
-  display: flex;
+export const StyledSwiper = styled(Swiper)`
   width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
+  height: 77px;
+  padding: 0 15px;
 
   @media(min-width: ${((props) => props.theme.tabletWidth)}) {
-    margin-bottom: 100px;
+    //width: ${((props) => props.theme.tabletWidth)};
+    padding: 0
+  }
+
+  @media(min-width: ${((props) => props.theme.desktopWidth)}) {
+    //width: ${((props) => props.theme.desktopWidth)};
+  }
+
+  .image-slider,
+  .swiper-slide {
+    width: auto;
   }
 `;

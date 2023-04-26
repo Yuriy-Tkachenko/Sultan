@@ -20,7 +20,7 @@ const PromoList: FC<PromoProps> = ({infos}) => {
     >
       {infos.map((info) => (
         <SwiperSlide>
-          <Promo info={info} key={info.id}/>
+          <Promo info={info} key={info.id} />
         </SwiperSlide>
       ))}
     </StyledSwiper>

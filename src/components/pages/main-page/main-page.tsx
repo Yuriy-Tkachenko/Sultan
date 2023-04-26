@@ -4,7 +4,10 @@ import Offer from "../../ui/offer/offer";
 import PromotionalProducts from "../../blocks/promotional-products/promotional-products";
 import Category from "../../blocks/category/category";
 import PromoList from "../../blocks/promo-list/promo-list";
+import BrandsList from "../../blocks/brands-list/brands-list";
+
 import promoInfo from "../../../mocks/promo-info";
+import brands from "../../../mocks/brands";
 
 function MainPage() {
   return(
@@ -24,6 +27,7 @@ function MainPage() {
       <PromotionalProducts />
       <Category />
       <PromoList infos={promoInfo}/>
+      <BrandsList brands={brands} />
     </Main>
   )
 }
