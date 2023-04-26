@@ -5,6 +5,7 @@ import PromotionalProducts from "../../blocks/promotional-products/promotional-p
 import Category from "../../blocks/category/category";
 import PromoList from "../../blocks/promo-list/promo-list";
 import BrandsList from "../../blocks/brands-list/brands-list";
+import Map from "../../blocks/map/map";
 
 import promoInfo from "../../../mocks/promo-info";
 import brands from "../../../mocks/brands";
@@ -28,6 +29,7 @@ function MainPage() {
       <Category />
       <PromoList infos={promoInfo}/>
       <BrandsList brands={brands} />
+      <Map />
     </Main>
   )
 }
