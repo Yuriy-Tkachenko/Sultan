@@ -1,13 +1,14 @@
-import React from "react";
+import React, {FC} from "react";
 import { StyledButton } from "./styles";
 
 interface ButtonProps {
-  name: string;
+  children: string;
+  to: string;
 }
 
-function CatalogButton({name}: ButtonProps) {
-  return(
-    <StyledButton>{name}</StyledButton>
+const CatalogButton: FC<ButtonProps> = ({children, to}) => {
+  return (
+    <StyledButton to={to}>{children}</StyledButton>
   )
 }
 

@@ -4,7 +4,6 @@ import { Wrapper, Container, StyledText, StyledSwiper } from "./styles";
 import { IBrands } from "../../../types/types";
 import Brand from "../brand/brand";
 
-import { Navigation, Pagination } from 'swiper';
 import { SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 

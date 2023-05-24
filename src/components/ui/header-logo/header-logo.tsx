@@ -1,9 +1,15 @@
-import React from "react";
-import { Logo } from "./styles";
+import React, {FC} from "react";
+import { StyledLink, Logo } from "./styles";
 
-function HeaderLogo() {
+interface ButtonProps {
+  to: string;
+}
+
+const HeaderLogo: FC<ButtonProps> = ({to}) => {
   return(
-    <Logo />
+    <StyledLink to={to}>
+      <Logo />
+    </StyledLink>
   )
 }
 

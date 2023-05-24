@@ -7,4 +7,4 @@ function ButtonDelete() {
   )
 }
 
-export default StyledButton;
+export default ButtonDelete;

@@ -23,10 +23,10 @@ function Header() {
       <UserNavigation>
         <MenuWrapper>
           <ButtonClose />
-          <HeaderLogo />
+          <HeaderLogo to="/" />
         </MenuWrapper>
         <Wrapper>
-          <CatalogButton name='Каталог'/>
+          <CatalogButton to="/catalog.html" children="Каталог"/>
           <SearchInput />
           <CallbackButton />
           <DownLoadButton name="Прайс-лист" width={200} height={59}/>

@@ -1,4 +1,3 @@
-import react from "react";
 import {Title} from "./styles"
 
 interface TextProps {

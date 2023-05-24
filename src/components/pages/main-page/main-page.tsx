@@ -1,5 +1,5 @@
 import React from "react";
-import { Main, MainSection, Wrapper, Title, TextWrapper, Text, Offers } from "./styles";
+import { MainSection, Wrapper, Title, TextWrapper, Text, Offers } from "./styles";
 import Offer from "../../ui/offer/offer";
 import PromotionalProducts from "../../blocks/promotional-products/promotional-products";
 import Category from "../../blocks/category/category";
@@ -12,8 +12,8 @@ import brands from "../../../mocks/brands";
 
 function MainPage() {
   return(
-    <MainSection>
-      <Main>
+    <>
+      <MainSection>
         <Wrapper>
           <TextWrapper>
             <Title>Бытовая химия, косметика и хозтовары</Title>
@@ -24,13 +24,13 @@ function MainPage() {
             </Offers>
           </TextWrapper>
         </Wrapper>
-      </Main>
+      </MainSection>
       <PromotionalProducts />
       <Category />
       <PromoList infos={promoInfo}/>
       <BrandsList brands={brands} />
       <Map />
-    </MainSection>
+    </>
   )
 }
 

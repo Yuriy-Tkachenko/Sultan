@@ -3,6 +3,8 @@ import { MapContainer, Popup } from "react-leaflet";
 import { Li } from "../../styled/styled";
 import { Ul } from "../../styled/styled";
 
+export const MapSection = styled.section``;
+
 export const StyledContainer = styled(MapContainer)`
   width: 290px;
   height: 600px;

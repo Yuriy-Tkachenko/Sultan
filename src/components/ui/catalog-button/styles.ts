@@ -1,14 +1,15 @@
 import styled from "styled-components";
-import { Button } from "../../styled/styled";
+import { Link } from "react-router-dom";
 import box from "../../../assets/cube.svg";
 import whiteBox from "../../../assets/white-box.svg";
 
-export const StyledButton = styled(Button)`
-  position: relative;
+export const StyledButton = styled(Link)`
+  display: block;
   font-family: 'Inter';
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
+  text-decoration: none;
   color: ${(props) => props.theme.greyColor};
   padding: 0 0 0 21px;
   position: relative;
@@ -29,14 +30,12 @@ export const StyledButton = styled(Button)`
     color: ${((props) => props.theme.whiteColor)};
     background-color: ${((props) => props.theme.yellowBackground)};
     border-radius: 79px;
-    width: 192px;
-    height: 59px;
-    padding: 0 27px 0 0;
+    padding: 21px 81px 21px 60px;
     margin-bottom: 20px;
 
     &:before {
       background-image: url(${whiteBox});
-      left: 123px;
+      left: 130px;
       top: 22px;
     }
   }

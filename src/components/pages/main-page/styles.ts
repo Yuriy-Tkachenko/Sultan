@@ -2,11 +2,6 @@ import styled from "styled-components";
 import backgroundImage1x from "../../../assets/main-background@1x.jpg";
 import backgroundImage2x from "../../../assets/main-background@2x.jpg"
 
-export const Main = styled.main`
-  width: 100%;
-  height: 100%;
-`;
-
 export const MainSection = styled.section`
   width: 100%;
   height: 100%;
@@ -136,4 +131,3 @@ export const Offers = styled.div`
     justify-content: space-between;
   }
 `;
-

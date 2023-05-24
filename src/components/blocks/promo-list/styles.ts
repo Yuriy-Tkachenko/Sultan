@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import { Swiper } from "swiper/react";
 
+export const SliderSection = styled.section``;
+
 export const StyledSwiper = styled(Swiper)`
   width: 290px;
   height: 205px;
