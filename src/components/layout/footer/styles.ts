@@ -15,7 +15,7 @@ export const StyledFooter = styled.footer`
 
 export const Container = styled.div`
   @media(min-width: ${(props) => props.theme.tabletWidth}) {
-    width: ${(props) => props.theme.tabletWidth};
+    padding: 0 30px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -24,6 +24,7 @@ export const Container = styled.div`
   @media(min-width: ${(props) => props.theme.desktopWidth}) {
     width: ${(props) => props.theme.desktopWidth};
     margin: 0 auto;
+    padding: 0 15px;
   }
 `;
 

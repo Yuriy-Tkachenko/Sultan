@@ -9,7 +9,7 @@ interface ProductProps {
 }
 
 const Product: FC<ProductProps> = ({product}) => {
-  return(
+  return (
     <Wrapper>
       <ImageWrapper>
         <Raiting>Популярное</Raiting>

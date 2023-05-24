@@ -8,13 +8,14 @@ export const StyledHeader = styled.header`
   flex-direction: column;
 
   @media(min-width: ${((props) => props.theme.tabletWidth)}) {
-    width: ${((props) => props.theme.tabletWidth)};
+    padding: 0 30px;
     margin: 0 auto;
   }
 
   @media(min-width: ${((props) => props.theme.desktopWidth)}) {
     width: ${((props) => props.theme.desktopWidth)};
     margin: 0 auto;
+    padding: 0 15px;
   }
 `;
 

@@ -4,7 +4,7 @@ import { StyledContainer, StyledPopup, StyledTitle, Styledtext, StyledList, Styl
 
 function Map() {
   return(
-    <StyledContainer center={[53.268137, 69.407621]} zoom={17} scrollWheelZoom={true}>
+    <StyledContainer center={[53.268137, 69.407621]} zoom={17} scrollWheelZoom={false}>
     <TileLayer
       attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

@@ -32,3 +32,13 @@ export interface IBrands {
   id: number;
   image: IImage;
 }
+
+export interface IMaker {
+  id: number;
+  maker: string;
+}
+
+export interface ITypes {
+  id: number;
+  typeOfCare: string;
+}

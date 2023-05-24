@@ -7,6 +7,7 @@ export const defaultTheme = {
   greenColor: "#1FD85D",
   greyColor: "#3F4E65",
   lightGreyColor: "#5C6370",
+  extraLightYellowColor: "rgba(255, 202, 101, 0.5)",
   extraLightGreyColor: "#EDEDED",
   yellowBackground: "#FFC85E",
   lightYellowBackground: "linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%)",

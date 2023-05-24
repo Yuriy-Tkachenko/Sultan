@@ -7,7 +7,7 @@ export const Main = styled.main`
   height: 100%;
 `;
 
-export const MainOffer = styled.section`
+export const MainSection = styled.section`
   width: 100%;
   height: 100%;
   background-image: url(${backgroundImage1x});

@@ -48,9 +48,11 @@ const products = [
     price: '480,76 ₸',
     image: {
       src: aos_img_1x,
-      srcset: aos_img_2x
+      srcset: aos_img_2x,
+      width: 92,
+      height: 194,
     },
-    typefCare: 'уход за посудой'
+    typeOfCare: 'уход за посудой'
   },
   {
     id: 1,
@@ -64,9 +66,11 @@ const products = [
     price: '550,00 ₸',
     image: {
       src: ariel_img_1x,
-      srcset: ariel_img_2x
+      srcset: ariel_img_2x,
+      width: 202,
+      height: 194,
     },
-    typefCare: 'уход за одеждой'
+    typeOfCare: 'уход за одеждой'
   },
   {
     id: 2,
@@ -80,9 +84,11 @@ const products = [
     price: '800,00 ₸',
     image: {
       src: bimax_img_1x,
-      srcset: bimax_img_2x
+      srcset: bimax_img_2x,
+      width: 178,
+      height: 218,
     },
-    typefCare: 'уход за одеждой'
+    typeOfCare: 'уход за одеждой'
   },
   {
     id: 3,
@@ -96,9 +102,11 @@ const products = [
     price: '770,00 ₸',
     image: {
       src: blend_img_1x,
-      srcset: blend_img_2x
+      srcset: blend_img_2x,
+      width: 180,
+      height: 100,
     },
-    typefCare: 'уход за зубами'
+    typeOfCare: 'уход за зубами'
   },
   {
     id: 4,
@@ -112,9 +120,11 @@ const products = [
     price: '1001,00 ₸',
     image: {
       src: colgate_img_1x,
-      srcset: colgate_img_2x
+      srcset: colgate_img_2x,
+      width: 90,
+      height: 190,
     },
-    typefCare: 'уход за зубами'
+    typeOfCare: 'уход за зубами'
   },
   {
     id: 5,
@@ -128,9 +138,11 @@ const products = [
     price: '1520,00 ₸',
     image: {
       src: gillette_img_1x,
-      srcset: gillette_img_2x
+      srcset: gillette_img_2x,
+      width: 130,
+      height: 130,
     },
-    typefCare: 'уход за лицом'
+    typeOfCare: 'уход за лицом'
   },
   {
     id: 6,
@@ -144,9 +156,11 @@ const products = [
     price: '432,00 ₸',
     image: {
       src: lafresh_img_1x,
-      srcset: lafresh_img_2x
+      srcset: lafresh_img_2x,
+      width: 100,
+      height: 120
     },
-    typefCare: 'уход за телом'
+    typeOfCare: 'уход за телом'
   },
   {
     id: 7,
@@ -160,9 +174,11 @@ const products = [
     price: '302,00 ₸',
     image: {
       src: laf_img_1x,
-      srcset: laf_img_2x
+      srcset: laf_img_2x,
+      width: 100,
+      height: 120
     },
-    typefCare: 'уход за лицом'
+    typeOfCare: 'уход за лицом'
   },
   {
     id: 8,
@@ -176,9 +192,11 @@ const products = [
     price: '369,00 ₸',
     image: {
       src: mysun_img_1x,
-      srcset: mysun_img_2x
+      srcset: mysun_img_2x,
+      width: 80,
+      height: 180
     },
-    typefCare: 'уход за телом'
+    typeOfCare: 'уход за телом'
   },
   {
     id: 9,
@@ -192,9 +210,11 @@ const products = [
     price: '505,00 ₸',
     image: {
       src: naturella_img_1x,
-      srcset: naturella_img_2x
+      srcset: naturella_img_2x,
+      width: 140,
+      height: 120
     },
-    typefCare: 'уход за интимными местами'
+    typeOfCare: 'уход за интимными местами'
   },
   {
     id: 10,
@@ -208,9 +228,11 @@ const products = [
     price: '505,00 ₸',
     image: {
       src: palmolive_img_1x,
-      srcset: palmolive_img_2x
+      srcset: palmolive_img_2x,
+      width: 130,
+      height: 90
     },
-    typefCare: 'уход за телом'
+    typeOfCare: 'уход за телом'
   },
   {
     id: 11,
@@ -224,9 +246,11 @@ const products = [
     price: '1120,00 ₸',
     image: {
       src: papia_img_1x,
-      srcset: papia_img_2x
+      srcset: papia_img_2x,
+      width: 160,
+      height: 110
     },
-    typefCare: 'уход за интимными местами'
+    typeOfCare: 'уход за интимными местами'
   },
   {
     id: 12,
@@ -240,9 +264,11 @@ const products = [
     price: '891,00 ₸',
     image: {
       src: rexona_img_1x,
-      srcset: rexona_img_2x
+      srcset: rexona_img_2x,
+      width: 50,
+      height: 170
     },
-    typefCare: 'уход за интимными местами'
+    typeOfCare: 'уход за интимными местами'
   },
   {
     id: 13,
@@ -256,9 +282,11 @@ const products = [
     price: '305,00 ₸',
     image: {
       src: salfeti_img_1x,
-      srcset: salfeti_img_2x
+      srcset: salfeti_img_2x,
+      width: 180,
+      height: 80
     },
-    typefCare: 'уход за руками'
+    typeOfCare: 'уход за руками'
   },
   {
     id: 14,
@@ -272,9 +300,11 @@ const products = [
     price: '1500,00 ₸',
     image: {
       src: shoulders_img_1x,
-      srcset: shoulders_img_2x
+      srcset: shoulders_img_2x,
+      width: 70,
+      height: 180
     },
-    typefCare: 'уход за головой'
+    typeOfCare: 'уход за головой'
   },
   {
     id: 15,
@@ -288,9 +318,11 @@ const products = [
     price: '999,00 ₸',
     image: {
       src: sorti_img_1x,
-      srcset: sorti_img_2x
+      srcset: sorti_img_2x,
+      width: 90,
+      height: 190
     },
-    typefCare: 'уход за посудой'
+    typeOfCare: 'уход за посудой'
   },
   {
     id: 16,
@@ -304,9 +336,11 @@ const products = [
     price: '1463,00 ₸',
     image: {
       src: syoss_img_1x,
-      srcset: syoss_img_2x
+      srcset: syoss_img_2x,
+      width: 70,
+      height: 190
     },
-    typefCare: 'уход за головой'
+    typeOfCare: 'уход за головой'
   },
   {
     id: 17,
@@ -320,9 +354,11 @@ const products = [
     price: '658,00 ₸',
     image: {
       src: zewa_img_1x,
-      srcset: zewa_img_2x
+      srcset: zewa_img_2x,
+      width: 190,
+      height: 130
     },
-    typefCare: 'уход за руками'
+    typeOfCare: 'уход за руками'
   },
 ]
 
